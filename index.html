@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1 class="titulo">
+        Cadastro
+    </h1>
+    <form class="formulario">
+        <label>Nome : <input type="text" id="nome" name="nome" required>
+        </label>
+        <label>Sobrenome : <input type="text" id="sobrenome" name="sobrenome" required>
+        </label>
+        <br>
+        <input type="button" name="cadastrar" value="cadastrar" onclick="cadastrar(nome.value, sobrenome.value )">
+    </form>
+
+    <table id="tabela">
+        <ul id="tblista">
+            <li id="tbnome"></li>
+            <li id="tbsobrenome"></li>
+        </ul>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
