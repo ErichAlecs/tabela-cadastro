@@ -3,6 +3,7 @@
     border: 0;
     box-sizing: border-box;
 }
+
 .cadast-img{
     display: flex;
     justify-content: center;
@@ -15,8 +16,12 @@
 .formulario{
     border: solid black;
     background-color: #edededed;
+    width: 550px;
 }
 .titulo{
     text-align: center;
     color: blueviolet;
+}
+input{
+    margin: 10px;
 }
