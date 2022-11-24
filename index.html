@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1 class="titulo">
         Cadastro
     </h1>
-    <form class="formulario">
-        <label>Nome : <input type="text" id="nome" name="nome" required>
-        </label>
-        <label>Sobrenome : <input type="text" id="sobrenome" name="sobrenome" required>
-        </label>
-        <br>
-        <input type="button" name="cadastrar" value="cadastrar" onclick="cadastrar(nome.value, sobrenome.value )">
-    </form>
+    <div class="cadast-img">
+        <form class="formulario">
+            <label>Nome :</label>
+            <input type="text" name="nome" required>
+
+            <label>Sobrenome :</label>
+            <input type="text" name="sobrenome" required>
+            <br>
+            <label>E-mail :</label>
+            <input type="email" name="email" required>
+
+            <label>Data de Nascimento :</label>
+            <input type="date" name="datanascimento" required>
+            <br>
+            <label>Endereço :</label>
+            <input type="text" name="endereco" required>
+
+            <label>Numero :</label>
+            <input type="number" name="numero" required>
+            <br>
+            <label>Cidade :</label>
+            <input type="text" name="cidade" required>
+            
+            <label>Estado :</label>
+            <input type="" name="estado" required>
+
+            <input type="button" value="cadastrar"
+                onclick="cadastrar(nome.value, sobrenome.value, email.value, datanascimento.value, endereco.value, numero.value, cidade.value, estado.value)">
+        </form>
+        <img id="img1" src="img.webp" alt="uma praia">
+    </div>
 
     <table id="tabela">
-        <ul id="tblista">
-            <li id="tbnome"></li>
-            <li id="tbsobrenome"></li>
-        </ul>
+        <thead id="tblista">
+            <tr>
+                <td>Cadastro Nº</td>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+                <td>email</td>
+                <td>Data de Nascimento</td>
+                <td>Endereço</td>
+                <td>Numero</td>
+                <td>Cidade</td>
+                <td>Estado</td>
+            </tr>
+        </thead>
     </table>
 
-    <script src="index.js"></script>
 </body>
+
 </html>
