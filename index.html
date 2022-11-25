@@ -16,52 +16,51 @@
     </h1>
     <div class="cadast-img">
         <form class="formulario">
-            <label>Nome :</label>
-            <input type="text" name="nome" required>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" required>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" required>
+            </p>
 
-            <label>Sobrenome :</label>
-            <input type="text" name="sobrenome" required>
-            <br>
-            <label>E-mail :</label>
-            <input type="email" name="email" required>
+            <label>E-mail:</label><br>
+            <input type="email" name="email" required><br>
 
-            <label>Data de Nascimento :</label>
+            <label>Data de Nascimento:</label>  
             <input type="date" name="datanascimento" required>
-            <br>
-            <label>Endereço :</label>
-            <input type="text" name="endereco" required>
-
-            <label>Numero :</label>
-            <input type="number" name="numero" required>
-            <br>
-            <label>Cidade :</label>
-            <input type="text" name="cidade" required>
-
-            <label>Estado :</label>
-            <input type="" name="estado" required>
-
+            <p>
+                <label>Endereço:</label>
+                <input type="text" name="endereco" required>
+                <label>Numero:</label>
+                <input type="number" name="numero" required>
+                <label>Cidade:</label>
+                <input type="text" name="cidade" required>
+                <label>Estado:</label>
+                <input type="" name="estado" required>
+            </p>
             <input type="button" value="cadastrar"
                 onclick="cadastrar(nome.value, sobrenome.value, email.value, datanascimento.value, endereco.value, numero.value, cidade.value, estado.value)">
         </form>
         <img id="img1" src="img.webp" alt="uma praia">
     </div>
-
-    <table id="tabela">
-        <thead id="tblista">
-            <tr>
-                <td>Cadastro Nº</td>
-                <td>Nome</td>
-                <td>Sobrenome</td>
-                <td>email</td>
-                <td>Data de Nascimento</td>
-                <td>Endereço</td>
-                <td>Numero</td>
-                <td>Cidade</td>
-                <td>Estado</td>
-            </tr>
-        </thead>
-    </table>
-
+    <div class="divtabela">
+        <table id="tabela">
+            <thead id="tblista">
+                <tr id="corpotabela">
+                    <div>
+                        <td>Cadastro Nº</td>
+                        <td>Nome</td>
+                        <td>Sobrenome</td>
+                        <td>email</td>
+                        <td>Data de Nascimento</td>
+                        <td>Endereço</td>
+                        <td>Numero</td>
+                        <td>Cidade</td>
+                        <td>Estado</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
 </body>
 
 </html>
